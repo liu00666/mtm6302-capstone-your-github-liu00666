@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const playAgainButton = document.getElementById("play-again");
     const resetScoreButton = document.getElementById("reset-score");
 
+    
     let correctCount = localStorage.getItem("correctCount") || 0;
     let totalCount = localStorage.getItem("totalCount") || 0;
 
