@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function fetchQuestion(difficulty) {
         const url = `https://opentdb.com/api.php?amount=1&difficulty=${difficulty}&category=18&type=multiple`; 
-        // Category 18 = "Science: Computers" (JavaScript-related questions)
+       
 
         try {
             const response = await fetch(url);
