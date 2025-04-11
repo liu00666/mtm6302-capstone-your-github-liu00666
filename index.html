@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizlet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">Quizlet</div> <!-- Added Header -->
+
+    <div class="container">
+        <h2>Select difficulty level</h2>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="start-quiz">Start</button>
+
+        <div id="quiz-container" class="hidden">
+            <h2 id="question-text">Question will appear here</h2>
+            <form id="quiz-form">
+                <div id="options"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h2 id="result-message"></h2>
+            <p>Total correct answers: <span id="correct-count">0</span> / <span id="total-count">0</span></p>
+            <button id="reset-score">Reset Score</button>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
